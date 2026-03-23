@@ -12,7 +12,7 @@ function Chart() {
   const [transactions, setTransactions] = useState([]);
 
   useEffect(() => {
-    fetch("http://127.0.0.1:8000/transactions")
+    fetch("https://wallet-dashboard-1.onrender.com/transactions")
       .then((res) => res.json())
       .then((data) => setTransactions(data))
       .catch((err) => console.error(err));

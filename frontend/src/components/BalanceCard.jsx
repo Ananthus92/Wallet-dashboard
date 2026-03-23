@@ -15,7 +15,7 @@ function BalanceCard({ balance, setBalance, setRefresh }){
 
   <button 
   onClick={async () => {
-    const res = await fetch("http://127.0.0.1:8000/deposit?amount=1000", {
+    const res = await fetch("https://wallet-dashboard-1.onrender.com/deposit?amount=1000", {
       method: "POST",
     });
 
@@ -32,7 +32,7 @@ function BalanceCard({ balance, setBalance, setRefresh }){
   <button 
   onClick={async () => {
     if (balance >= 500) {
-      const res = await fetch("http://127.0.0.1:8000/withdraw?amount=500", {
+      const res = await fetch("https://wallet-dashboard-1.onrender.com/withdraw?amount=500", {
         method: "POST",
       });
 

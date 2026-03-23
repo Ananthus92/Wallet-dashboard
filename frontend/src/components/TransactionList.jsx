@@ -7,7 +7,7 @@ function TransactionList({ refresh }) {
 
   //  Fetch data 
   useEffect(() => {
-    fetch("http://127.0.0.1:8000/transactions")
+    fetch("https://wallet-dashboard-1.onrender.com/transactions")
       .then((res) => res.json())
       .then((data) => {
         const sorted = data.sort((a, b) => b.id - a.id);
