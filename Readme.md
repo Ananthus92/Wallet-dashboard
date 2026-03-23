@@ -44,7 +44,12 @@ npm run dev
 
 ## 🌐 Deployment
 
+
+## Live Demo
 Frontend:
+https://wallet-dashboard-six.vercel.app/
+
+
 Backend: Local / (optional deploy)
 
 ---
